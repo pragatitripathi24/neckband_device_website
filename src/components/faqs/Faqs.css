@@ -1,0 +1,80 @@
+.faq-container {
+  display: flex; /* Flexbox for left and right sections */
+  justify-content: space-between; /* Space between the sections */
+  align-items: center; /* Vertically align the content */
+  gap: 20px; /* Space between FAQ and image */
+  max-width: 1100px;
+  margin-left: 10px;
+  padding: 20px;
+  min-height: 70vh;
+  margin-top: 1rem;
+}
+
+.faq-section {
+  flex: 1 1 120%; /* Make FAQ section take 50% of available space */
+ 
+ 
+  background: offwhite;
+  padding: 20px;
+  position: relative;
+  min-height: 50vh;
+  background-color: white;
+}
+
+.faq-section > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: left; /* Align section title to the left */
+}
+
+.faq-item {
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background-color: #f9f9f9; /* Default background */
+}
+
+.faq-item:nth-child(odd) {
+  background-color: #ffffff; /* Alternate color for odd items */
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: rgb(57, 0, 60);
+  font-size: 16px; /* Reduced font size */
+  text-align: left; /* Left align question text */
+}
+
+.faq-question span:first-child {
+  margin-right: 10px; /* Spacing for sequence number */
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 5px 0 10px 20px;
+  margin-top: 5px;
+  color: rgb(53, 51, 51);
+  font-size: 14px; /* Reduced font size */
+  text-align: left; /* Left align answer text */
+}
+
+.anscollpse {
+  margin-right: 34px;
+}
+
+.image-section {
+  flex: 1 1 50%; /* Make image section take 50% of available space */
+  text-align: center;
+  padding: 20px;
+}
+
+.image-section img {
+  max-width: 200%;
+  height: auto; /* Ensure the image aspect ratio remains intact */
+ 
+ 
+}
